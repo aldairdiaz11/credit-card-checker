@@ -90,10 +90,7 @@ function idInvalidCardCompanies(nestedArr) {
         }
     }
     // checking for duplicate companies
-    for (let i = 0; i < companies.length; i++) {
-
-    }
-    return companies;
+    return [...new Set(companies)];
 }
 
 const invalidCardsArr = findInvalidCards(batch);
